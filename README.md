@@ -20,6 +20,7 @@ Use the following command in your terminal:
 ```git clone <https://github.com/psri981/Group8-300-762>```
 
 ## 3. Making Changes and Committing
+(All git commands are done through the terminal)
 1. **Edit the files in your local repository.**
 2. **Use the following command to stage your changes for commit:**
 ```git add .```
