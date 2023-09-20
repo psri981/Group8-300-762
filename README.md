@@ -1,6 +1,7 @@
 # Getting Started with GitHub
 
 Welcome to Infosys300/Softeng762 GitHub! This guide will help you start using GitHub :).
+And this link relates to using GitHub with UiPath Studio - https://docs.uipath.com/studio/standalone/2023.4/user-guide/managing-projects-git
 
 ## Table of Contents
 1. **Installing Git**
