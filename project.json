@@ -1,7 +1,7 @@
 {
   "name": "Movie Search Data Scrape Test 1",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "IterateThroughPage.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.3]",
@@ -47,6 +47,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "a03c229e-1804-4228-aa87-5f0bd96d2c93",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "IterateThroughPage.xaml",
+      "uniqueId": "4da1f36e-a578-40d1-8f4e-1d968dc33370",
       "input": [],
       "output": []
     }
