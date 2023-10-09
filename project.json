@@ -1,7 +1,7 @@
 {
   "name": "Movie Search Data Scrape Test 1",
   "description": "Blank Process",
-  "main": "IterateThroughPage.xaml",
+  "main": "GrossIteration.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.3]",
@@ -20,7 +20,6 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
-    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -28,8 +27,7 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "mustRestoreAllDependencies": true
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -55,6 +53,12 @@
     {
       "filePath": "IterateThroughPage.xaml",
       "uniqueId": "4da1f36e-a578-40d1-8f4e-1d968dc33370",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "GrossIteration.xaml",
+      "uniqueId": "6b181d79-a994-4a43-ab83-ec4807d952bd",
       "input": [],
       "output": []
     }
