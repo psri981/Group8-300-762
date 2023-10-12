@@ -260,7 +260,7 @@
               <av:PointCollection x:Key="ConnectorLocation">300,417.3 300,451</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:BuildDataTable DataTable="[dt]" DisplayName="All Gross Data" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Gross_Domestic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Gross_Worldwide&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:BuildDataTable DataTable="[dt]" DisplayName="Create Gross Data Table" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Gross_Domestic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Gross_Worldwide&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
           <FlowStep.Next>
             <FlowStep x:Name="__ReferenceID0">
               <sap:WorkflowViewStateService.ViewState>
@@ -319,19 +319,19 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,1668" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,1666" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="529.6,1556" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="[row(&quot;Film URL&quot;).ToString]">
+                          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="530,1555" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="[row(&quot;Film URL&quot;).ToString]">
                             <ui:OpenBrowser.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1453.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1453" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="s:String[]" Name="SplitText" />
                                     <Variable x:TypeArguments="x:Boolean" Default="False" Name="IfNull" />
@@ -341,8 +341,8 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="433.6,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Film Domestic Gross " sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_16">
+                                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Film Domestic Gross " sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="GetValue_16">
                                     <ui:GetValue.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9b1c12c2-5ec6-4e3e-bb3c-72a3732966e0" InformativeScreenshot="86987dec43c18ae5d9e85e5155447a74" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='a-page' tag='DIV' innertext='                                                                                                            Domestic*                                                                                                                                                                                                                                         $*                                                                                                                         ' /&gt;">
                                         <ui:Target.TimeoutMS>
@@ -357,7 +357,7 @@
                                       <OutArgument x:TypeArguments="x:String">[Gross_Domestic]</OutArgument>
                                     </ui:GetValue.Value>
                                   </ui:GetValue>
-                                  <Assign DisplayName="SplitText - Splits Gross Value from Region" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                  <Assign DisplayName="SplitText - Splits Gross Value from Region" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_32">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="s:String[]">[SplitText]</OutArgument>
                                     </Assign.To>
@@ -365,7 +365,7 @@
                                       <InArgument x:TypeArguments="s:String[]">[Gross_Domestic.Split(")"C)]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign DisplayName="Gross_Domestic - Turns Split Array into a Usuable String" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                  <Assign DisplayName="Gross_Domestic - Turns Split Array into a Usuable String" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_22">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[Gross_Domestic]</OutArgument>
                                     </Assign.To>
@@ -373,7 +373,7 @@
                                       <InArgument x:TypeArguments="x:String">[SplitText(1)]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign DisplayName="Gross_Domestic - Trims Gross Value" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+                                  <Assign DisplayName="Gross_Domestic - Trims Gross Value" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_33">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[Gross_Domestic]</OutArgument>
                                     </Assign.To>
@@ -381,7 +381,7 @@
                                       <InArgument x:TypeArguments="x:String">[Gross_Domestic.Trim]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Worldwide Gross" sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_18">
+                                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Worldwide Gross" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="GetValue_18">
                                     <ui:GetValue.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e8f0ffd4-ecf4-426e-8f9d-f90a4e7a3016" InformativeScreenshot="dacb4a2c157ba054adb384b1601bf277" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='a-page' tag='DIV' innertext='                                                                                                                                         Worldwide                                                                                                                                                                                                                                         $*                                                                                            ' /&gt;">
                                         <ui:Target.TimeoutMS>
@@ -396,7 +396,7 @@
                                       <OutArgument x:TypeArguments="x:String">[Gross_Worldwide]</OutArgument>
                                     </ui:GetValue.Value>
                                   </ui:GetValue>
-                                  <Assign DisplayName="SplitText - Splits Gross Value from Region" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                  <Assign DisplayName="SplitText - Splits Gross Value from Region" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_29">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="s:String[]">[SplitText]</OutArgument>
                                     </Assign.To>
@@ -404,7 +404,7 @@
                                       <InArgument x:TypeArguments="s:String[]">[Gross_Worldwide.Split("e"C)]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign DisplayName="Gross_Worldwide - Turns Split Array into a Usuable String" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                  <Assign DisplayName="Gross_Worldwide - Turns Split Array into a Usuable String" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_19">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[Gross_Worldwide]</OutArgument>
                                     </Assign.To>
@@ -412,7 +412,7 @@
                                       <InArgument x:TypeArguments="x:String">[SplitText(1)]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign DisplayName="Gross_Worldwide - Trims Gross Value" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                  <Assign DisplayName="Gross_Worldwide - Trims Gross Value" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_34">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[Gross_Worldwide]</OutArgument>
                                     </Assign.To>
@@ -420,8 +420,8 @@
                                       <InArgument x:TypeArguments="x:String">[Gross_Worldwide.Trim]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {Gross_Domestic, Gross_Worldwide}]" DataTable="[dt]" DisplayName="Adds All Grosses to the Gross Database" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-                                  <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="433.6,24.8" sap2010:WorkflowViewState.IdRef="CloseTab_5" />
+                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {Gross_Domestic, Gross_Worldwide}]" DataTable="[dt]" DisplayName="Adds All Grosses to the Gross Database" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                  <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="CloseTab_5" />
                                 </Sequence>
                               </ActivityAction>
                             </ui:OpenBrowser.Body>
@@ -506,7 +506,7 @@
                                   <av:PointCollection x:Key="ConnectorLocation">300,897.3 300,911</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:BuildDataTable DataTable="[directorURL]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Director&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                              <ui:BuildDataTable DataTable="[directorURL]" DisplayName="Create Director and Director Url table" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Director&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
                               <FlowStep.Next>
                                 <FlowStep x:Name="__ReferenceID3">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -1177,13 +1177,13 @@
                                                     <ActivityAction.Argument>
                                                       <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                                                     </ActivityAction.Argument>
-                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[directorGross]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_5" SheetName="Directors" StartingCell="A2" />
+                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[directorGross]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_5" SheetName="Directors" StartingCell="A2" />
                                                     </Sequence>
                                                   </ActivityAction>
                                                 </ui:ExcelApplicationScope.Body>
@@ -1223,7 +1223,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,248.5 300,218.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This activity makes the program create the appropriate headings in excel spreadsheets" DisplayName="Set Headers Titles and Colours in Excel" sap:VirtualizedContainerService.HintSize="484,2255" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This activity makes the program create the appropriate headings in excel spreadsheets" DisplayName="Set Headers Titles and Colours in Excel" sap:VirtualizedContainerService.HintSize="200,124" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
