@@ -1,12 +1,12 @@
 {
   "name": "Movie Search Data Scrape Test 1",
-  "projectId": "6c724285-d26b-4a87-aae7-6c37d08a85a1",
   "description": "Blank Process",
   "main": "GrossIteration.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.3]",
     "UiPath.System.Activities": "[21.10.5]",
+    "UiPath.Testing.Activities": "[23.10.0]",
     "UiPath.UIAutomation.Activities": "[21.10.6]"
   },
   "webServices": [],
@@ -15,13 +15,13 @@
   "studioVersion": "21.10.7.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandler.xaml",
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
     "isPausable": true,
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
-    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -29,8 +29,7 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "mustRestoreAllDependencies": true
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -42,7 +41,13 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a0220b00-68bf-423e-984b-f0a6577456ee",
+        "fileName": "TestCase.xaml"
+      }
+    ],
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
