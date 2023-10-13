@@ -1,5 +1,6 @@
 {
   "name": "Movie Search Data Scrape Test 1",
+  "projectId": "7779e4af-e5e4-47b1-aef8-9d5b29af075d",
   "description": "Blank Process",
   "main": "GrossIteration.xaml",
   "dependencies": {
@@ -22,6 +23,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -29,7 +31,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -45,6 +48,7 @@
       {
         "editingStatus": "InProgress",
         "testCaseId": "a0220b00-68bf-423e-984b-f0a6577456ee",
+        "testCaseType": "TestCase",
         "fileName": "TestCase.xaml"
       }
     ],
