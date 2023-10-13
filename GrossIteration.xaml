@@ -1151,7 +1151,7 @@
                                           <av:PointCollection x:Key="ConnectorLocation">250,1236 250,1284</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:RemoveDuplicateRows OutputDataTable="{x:Null}" DataTable="[directorURL]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" />
+                                      <ui:RemoveDuplicateRows OutputDataTable="{x:Null}" DataTable="[directorURL]" DisplayName="Remove Duplicate Rows " sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" />
                                       <FlowStep.Next>
                                         <FlowStep x:Name="__ReferenceID9">
                                           <sap:WorkflowViewStateService.ViewState>
