@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="IterateThroughPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,1410" sap2010:WorkflowViewState.IdRef="IterateThroughPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="IterateThroughPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="728,1409" sap2010:WorkflowViewState.IdRef="IterateThroughPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
       <x:String>System.Activities</x:String>
@@ -82,7 +82,7 @@
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="IterateThroughPage" sap:VirtualizedContainerService.HintSize="634,1345" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="IterateThroughPage" sap:VirtualizedContainerService.HintSize="634,1344" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="x:String" Name="Gross_Domestic" />
@@ -101,10 +101,11 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Point x:Key="ShapeLocation">260,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,124.5</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">290,77.5 290,138.5</av:PointCollection>
         <x:Double x:Key="Height">1307.5</x:Double>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -113,12 +114,12 @@
     <FlowStep x:Name="__ReferenceID6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">200,218.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,124</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,342.5 300,364.5</av:PointCollection>
+          <av:Point x:Key="ShapeLocation">190,298.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,123</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">290,421.5 290,434.5 300,434.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This activity opens box office mojo in Ms Edge and filters and searches movies from last month" BrowserType="Edge" DisplayName="Open BoxOfficeMojo in Edge" sap:VirtualizedContainerService.HintSize="200,124" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.boxofficemojo.com/month/?ref_=bo_nb_hm_secondarytab">
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This activity opens box office mojo in Ms Edge and filters and searches movies from last month" BrowserType="Edge" DisplayName="Open BoxOfficeMojo in Edge" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.boxofficemojo.com/month/?ref_=bo_nb_hm_secondarytab">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -255,22 +256,22 @@
         <FlowStep x:Name="__ReferenceID4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">200,364.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,52</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">300,417.3 300,451</av:PointCollection>
+              <av:Point x:Key="ShapeLocation">200,434.5</av:Point>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,485.5 300,501</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:BuildDataTable DataTable="[dt]" DisplayName="Create Gross Data Table" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Gross_Domestic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Gross_Worldwide&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:BuildDataTable DataTable="[dt]" DisplayName="Create Gross Data Table" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Gross_Domestic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Gross_Worldwide&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
           <FlowStep.Next>
             <FlowStep x:Name="__ReferenceID0">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">200,451</av:Point>
-                  <av:Size x:Key="ShapeSize">200,153</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">300,604 300,604.5</av:PointCollection>
+                  <av:Point x:Key="ShapeLocation">200,501</av:Point>
+                  <av:Size x:Key="ShapeSize">200,138</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">300,639 300,654.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="This activity opens in box offie and then grabs the name of the film in Domestic Box Office" DisplayName="Data Scraping Movie Names" sap:VirtualizedContainerService.HintSize="200,153" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence sap2010:Annotation.AnnotationText="This activity opens in box offie and then grabs the name of the film in Domestic Box Office" DisplayName="Data Scraping Movie Names" sap:VirtualizedContainerService.HintSize="200,138" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -308,12 +309,12 @@
                 <FlowStep x:Name="__ReferenceID1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">200,604.5</av:Point>
-                      <av:Size x:Key="ShapeSize">200,52</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">300,657.3 300,694.5</av:PointCollection>
+                      <av:Point x:Key="ShapeLocation">200,654.5</av:Point>
+                      <av:Size x:Key="ShapeSize">200,51</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">300,705.5 300,724.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Get Movie Grosses" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Get Movie Grosses" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
@@ -439,12 +440,12 @@
                     <FlowStep x:Name="__ReferenceID5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">200,694.5</av:Point>
-                          <av:Size x:Key="ShapeSize">200,52</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">300,747.3 300,774.5</av:PointCollection>
+                          <av:Point x:Key="ShapeLocation">200,724.5</av:Point>
+                          <av:Size x:Key="ShapeSize">200,51</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">300,775.5 300,804.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Add Film Grosses to Excel" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
+                      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Add Film Grosses to Excel" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
                         <ui:ExcelApplicationScope.Body>
                           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                             <ActivityAction.Argument>
@@ -470,12 +471,12 @@
                         <FlowStep x:Name="__ReferenceID2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">200,774.5</av:Point>
-                              <av:Size x:Key="ShapeSize">200,52</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">300,827.3 300,844.5</av:PointCollection>
+                              <av:Point x:Key="ShapeLocation">200,804.5</av:Point>
+                              <av:Size x:Key="ShapeSize">200,51</av:Size>
+                              <av:PointCollection x:Key="ConnectorLocation">300,855.5 300,884.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Add Movie Name and Url into Excel" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
+                          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Add Movie Name and Url into Excel" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
                             <ui:ExcelApplicationScope.Body>
                               <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                                 <ActivityAction.Argument>
@@ -501,22 +502,22 @@
                             <FlowStep x:Name="__ReferenceID7">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">200,844.5</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,52</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">300,897.3 300,911</av:PointCollection>
+                                  <av:Point x:Key="ShapeLocation">200,884.5</av:Point>
+                                  <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                  <av:PointCollection x:Key="ConnectorLocation">300,935.5 300,951</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:BuildDataTable DataTable="[directorURL]" DisplayName="Create Director and Director Url table" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Director&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                              <ui:BuildDataTable DataTable="[directorURL]" DisplayName="Create Director and Director Url table" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Director&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
                               <FlowStep.Next>
                                 <FlowStep x:Name="__ReferenceID3">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">200,911</av:Point>
-                                      <av:Size x:Key="ShapeSize">200,139</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">300,1050 300,1074.5</av:PointCollection>
+                                      <av:Point x:Key="ShapeLocation">200,951</av:Point>
+                                      <av:Size x:Key="ShapeSize">200,138</av:Size>
+                                      <av:PointCollection x:Key="ConnectorLocation">300,1089 300,1104.5</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This section cycles through all the movie titles put in the data table and gathers crew information on them to put in the excel spreadsheet" DataTable="[ExtractDataTable]" DisplayName="Get and Add Crew Info" sap:VirtualizedContainerService.HintSize="200,139" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This section cycles through all the movie titles put in the data table and gathers crew information on them to put in the excel spreadsheet" DataTable="[ExtractDataTable]" DisplayName="Get and Add Crew Info" sap:VirtualizedContainerService.HintSize="200,138" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                                     <ui:ForEachRow.Body>
                                       <ActivityAction x:TypeArguments="sd:DataRow">
                                         <ActivityAction.Argument>
@@ -1142,22 +1143,22 @@
                                     <FlowStep x:Name="__ReferenceID8">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <av:Point x:Key="ShapeLocation">200,1074.5</av:Point>
-                                          <av:Size x:Key="ShapeSize">200,52</av:Size>
-                                          <av:PointCollection x:Key="ConnectorLocation">300,1127.3 300,1154.5</av:PointCollection>
+                                          <av:Point x:Key="ShapeLocation">200,1104.5</av:Point>
+                                          <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">300,1155.5 300,1174.5</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:RemoveDuplicateRows OutputDataTable="{x:Null}" DataTable="[directorURL]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" />
+                                      <ui:RemoveDuplicateRows OutputDataTable="{x:Null}" DataTable="[directorURL]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" />
                                       <FlowStep.Next>
                                         <FlowStep x:Name="__ReferenceID9">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <av:Point x:Key="ShapeLocation">200,1154.5</av:Point>
-                                              <av:Size x:Key="ShapeSize">200,52</av:Size>
-                                              <av:PointCollection x:Key="ConnectorLocation">300,1207.3 300,1254.5</av:PointCollection>
+                                              <av:Point x:Key="ShapeLocation">200,1174.5</av:Point>
+                                              <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                              <av:PointCollection x:Key="ConnectorLocation">300,1225.5 300,1254.5</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="DirectorSpreadsheet.xaml">
+                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="DirectorSpreadsheet.xaml">
                                             <ui:InvokeWorkflowFile.Arguments>
                                               <InArgument x:TypeArguments="sd:DataTable" x:Key="dataTable">[directorURL]</InArgument>
                                               <OutArgument x:TypeArguments="sd:DataTable" x:Key="result">[directorGross]</OutArgument>
@@ -1168,10 +1169,10 @@
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <av:Point x:Key="ShapeLocation">200,1254.5</av:Point>
-                                                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                  <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
+                                              <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
                                                 <ui:ExcelApplicationScope.Body>
                                                   <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                                                     <ActivityAction.Argument>
@@ -1218,12 +1219,12 @@
     <FlowStep x:Name="__ReferenceID11">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">200,124.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,124</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,248.5 300,218.5</av:PointCollection>
+          <av:Point x:Key="ShapeLocation">190,138.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,123</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">290,261.5 290,298.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This activity makes the program create the appropriate headings in excel spreadsheets" DisplayName="Set Headers Titles and Colours in Excel" sap:VirtualizedContainerService.HintSize="200,124" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This activity makes the program create the appropriate headings in excel spreadsheets" DisplayName="Set Headers Titles and Colours in Excel" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>

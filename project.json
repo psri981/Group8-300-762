@@ -1,7 +1,6 @@
 {
-  "name": "Movie Search Data Scrape Test 1",
-  "projectId": "7779e4af-e5e4-47b1-aef8-9d5b29af075d",
-  "description": "Blank Process",
+  "name": "Movie Search Data Scrape Group 8",
+  "description": "Automates collection of movie data - crew and grosses. Also automated collection of director data - highest grossing movie",
   "main": "GrossIteration.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",
@@ -23,7 +22,6 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
-    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -31,8 +29,7 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "mustRestoreAllDependencies": true
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -56,18 +53,6 @@
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
-    {
-      "filePath": "Main.xaml",
-      "uniqueId": "a03c229e-1804-4228-aa87-5f0bd96d2c93",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "IterateThroughPage.xaml",
-      "uniqueId": "4da1f36e-a578-40d1-8f4e-1d968dc33370",
-      "input": [],
-      "output": []
-    },
     {
       "filePath": "GrossIteration.xaml",
       "uniqueId": "f8ec923b-0b26-4248-8ef9-01c8b493d3b4",
