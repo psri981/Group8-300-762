@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Movie Search Data Scrape Group 8",
   "description": "Automates collection of movie data - crew and grosses. Also automated collection of director data - highest grossing movie",
   "main": "GrossIteration.xaml",
