@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1479,8247</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1479,7746</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DirectorSpreadsheet_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -77,7 +77,9 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -85,7 +87,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="This part deals with retrieving data on the director such as the movies worked on, highest grossing movie, gross amount and add it to a new spreadsheet called &quot;directors&quot;&#xA;" DisplayName="DirectorSpreadsheet" sap:VirtualizedContainerService.HintSize="1034,8182" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This part deals with retrieving data on the director such as the movies worked on, highest grossing movie, gross amount and add it to a new spreadsheet called &quot;directors&quot;&#xA;" DisplayName="DirectorSpreadsheet" sap:VirtualizedContainerService.HintSize="1034,7681" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="movieTitles" />
       <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
@@ -99,15 +101,15 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[directorGross]" DisplayName="Create data table with values  in string format" sap:VirtualizedContainerService.HintSize="972,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Director&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Highest_x0020_grossing_x0020_movie&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Gross_x0020_amount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:Comment sap:VirtualizedContainerService.HintSize="972,94" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// The data table is for Director, Highest grossing movie, gross amount and all in string value" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table created " sap:VirtualizedContainerService.HintSize="972,7673" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:BuildDataTable DataTable="[directorGross]" DisplayName="Create data table with values  in string format" sap:VirtualizedContainerService.HintSize="972,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Director&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Highest_x0020_grossing_x0020_movie&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Gross_x0020_amount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:long&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="972,75" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// The data table is for Director, Highest grossing movie, gross amount" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table created " sap:VirtualizedContainerService.HintSize="972,7191" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="938,7551" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="938,7069" sap2010:WorkflowViewState.IdRef="Sequence_15">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int64" Default="0" Name="highestGross" />
               <Variable x:TypeArguments="x:String" Name="highestGrossMovie" />
@@ -128,18 +130,16 @@
               </ui:GetRowItem.Value>
             </ui:GetRowItem>
             <ui:BuildDataTable DataTable="[movieTitles]" DisplayName="Create Data Table with Title and Url" sap:VirtualizedContainerService.HintSize="876,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-            <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="876,6888" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="[directorURL]">
+            <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="876,6406" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="[directorURL]">
               <ui:OpenBrowser.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="842,6786" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="842,6304" sap2010:WorkflowViewState.IdRef="Sequence_16">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="dis" />
                       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="directorDivs" />
-                      <Variable x:TypeArguments="ui:GenericValue" Name="genericVal" />
-                      <Variable x:TypeArguments="x:String" Name="grossString" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -346,13 +346,13 @@
                     </ui:ForEach>
                     <ui:Comment sap:VirtualizedContainerService.HintSize="780,151" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// The section in the above deals with getting information on the director for each movie including past movies worked on and their names, the  url of the movie and add it to a new data table row in the movietitles Data table" />
                     <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="780,25" sap2010:WorkflowViewState.IdRef="CloseTab_3" />
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[movieTitles]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="780,3062" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[movieTitles]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="780,3058" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="692,2942" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="692,2938" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="title" />
                               <Variable x:TypeArguments="x:String" Name="url" />
@@ -376,7 +376,7 @@
                                 <OutArgument x:TypeArguments="x:String">[url]</OutArgument>
                               </ui:GetRowItem.Value>
                             </ui:GetRowItem>
-                            <ui:Comment sap:VirtualizedContainerService.HintSize="630,115" sap2010:WorkflowViewState.IdRef="Comment_3" Text="// As there is no specific selector for the box office container, we instead retrieve text from the entire page and look for &quot;Gross worldwide&quot; specifically and the amount." />
+                            <ui:Comment sap:VirtualizedContainerService.HintSize="630,113" sap2010:WorkflowViewState.IdRef="Comment_3" Text="// As there is no specific selector for the box office container, we instead retrieve text from the entire page and look for &quot;Gross worldwide&quot; specifically and the amount." />
                             <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="630,385" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="[&quot;https://www.imdb.com/&quot; + url]">
                               <ui:OpenBrowser.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
@@ -410,15 +410,15 @@
                               </ui:OpenBrowser.Body>
                             </ui:OpenBrowser>
                             <ui:IsMatch BuilderPattern="Gross\sworldwide\$[0-9,]*" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="630,60" sap2010:WorkflowViewState.IdRef="IsMatch_2" Input="[pageText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;Gross\\sworldwide\\$[0-9,]*&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="Gross\sworldwide\$[0-9,]*" RegexOption="IgnoreCase, Compiled" Result="[exists]" />
-                            <If Condition="[exists]" sap:VirtualizedContainerService.HintSize="630,1699" sap2010:WorkflowViewState.IdRef="If_5">
+                            <If Condition="[exists]" sap:VirtualizedContainerService.HintSize="630,1697" sap2010:WorkflowViewState.IdRef="If_5">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="594,1512" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <Sequence sap:VirtualizedContainerService.HintSize="594,1510" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:Comment sap:VirtualizedContainerService.HintSize="532,96" sap2010:WorkflowViewState.IdRef="Comment_4" Text="// We format the string to just retrieve the amount and removing any special characters to parse as a 64-bit integer." />
+                                  <ui:Comment sap:VirtualizedContainerService.HintSize="532,94" sap2010:WorkflowViewState.IdRef="Comment_4" Text="// We format the string to just retrieve the amount and removing any special characters to parse as a 64-bit integer." />
                                   <Assign DisplayName="Save Gross amount as string" sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_9">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[gross]</OutArgument>
@@ -512,29 +512,7 @@
                         </ActivityAction>
                       </ui:ForEachRow.Body>
                     </ui:ForEachRow>
-                    <ui:Comment sap:VirtualizedContainerService.HintSize="780,94" sap2010:WorkflowViewState.IdRef="Comment_6" Text="// We format value to transform our int64 number into a currency format. This requries a generic datatype." />
-                    <Assign sap:VirtualizedContainerService.HintSize="780,82" sap2010:WorkflowViewState.IdRef="Assign_16">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="ui:GenericValue">[genericVal]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="ui:GenericValue">[highestGross]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:FormatValue DisplayName="Format Value" sap:VirtualizedContainerService.HintSize="780,60" sap2010:WorkflowViewState.IdRef="FormatValue_1" Value="[genericVal]">
-                      <ui:FormatValue.Format>
-                        <ui:CurrencyNumberFormatProvider DecimalDigits="0" DecimalSeparator="." GroupSeparator="," Symbol="$" />
-                      </ui:FormatValue.Format>
-                    </ui:FormatValue>
-                    <Assign sap:VirtualizedContainerService.HintSize="780,82" sap2010:WorkflowViewState.IdRef="Assign_17">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[grossString]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[genericVal]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {directorName,highestGrossMovie, grossString}]" DataTable="[directorGross]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="780,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {directorName,highestGrossMovie, highestGross}]" DataTable="[directorGross]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="780,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                   </Sequence>
                 </ActivityAction>
               </ui:OpenBrowser.Body>
