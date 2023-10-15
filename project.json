@@ -50,7 +50,17 @@
       {
         "editingStatus": "InProgress",
         "testCaseId": "bba08098-0606-4b22-9a45-e0c11f422acc",
-        "fileName": "TestCases\\TestMovieGrossScraping.xaml"
+        "fileName": "TestCases\\TestMovieGrossScrapingSingleFilm.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3015369c-96a2-4fb0-b633-51e58ce44a06",
+        "fileName": "TestCases\\TestMovieGrossScrapingMultipleFilms.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5cfcd838-affb-45f0-ab04-427eb2239857",
+        "fileName": "TestCases\\TestMovieGrossScrapingNoFilms.xaml"
       }
     ],
     "modernBehavior": false

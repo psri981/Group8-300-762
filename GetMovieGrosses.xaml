@@ -3,9 +3,9 @@
     <x:Property Name="ExtractDataTable" Type="InArgument(sd:DataTable)" />
     <x:Property Name="Gross_Domestic" Type="InOutArgument(x:String)" />
     <x:Property Name="Gross_Worldwide" Type="InOutArgument(x:String)" />
-    <x:Property Name="dt" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="dt" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>390,76</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1148,1671</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -82,7 +82,7 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Get Movie Grosses" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Get Movie Grosses" sap:VirtualizedContainerService.HintSize="543,1606" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
     <ui:ForEachRow.Body>
       <ActivityAction x:TypeArguments="sd:DataRow">
         <ActivityAction.Argument>
