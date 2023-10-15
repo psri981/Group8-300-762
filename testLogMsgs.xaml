@@ -1294,13 +1294,13 @@
           <av:Size x:Key="ShapeSize">200,128.8</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This activity makes the program create the appropriate headings in excel spreadsheets" DisplayName="Set Headers Titles and Colours in Excel" sap:VirtualizedContainerService.HintSize="433.6,2243.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_8" InstanceCachePeriod="3000" WorkbookPath="LogMessages.xlsx">
+      <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This activity creates an excel spreadsheet to record log messages" DisplayName="Create Excel Sheet to record Log Messages" sap:VirtualizedContainerService.HintSize="433.6,209.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_8" InstanceCachePeriod="3000" WorkbookPath="LogMessages.xlsx">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,596.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd1:Color" Name="colour" />
               </Sequence.Variables>
