@@ -1,52 +1,11 @@
-# Getting Started with GitHub
+# Running Instructions and User Manual:
+To run our solution open all files in this ZIP file in UiPath Studio. This solution was tested and developed primarily in UiPath Academic Alliance Studio 2022.4.1 and up and we strongly recommend running it in these versions as we can make no promises to the performance of the solution if run in other versions. 
 
-Welcome to Infosys300/Softeng762 GitHub! This guide will help you start using GitHub :).
-And this link relates to using GitHub with UiPath Studio - https://docs.uipath.com/studio/standalone/2023.4/user-guide/managing-projects-git
+Microsoft Edge must also be installed alongside its UiPath extension. A tutorial is shown in this link: https://docs.uipath.com/studio/standalone/2023.4/user-guide/extension-for-edge-chromium. The solution will not run properly without them.
 
-## Table of Contents
-1. **Installing Git**
-2. **Cloning a Repository**
-3. **Making Changes and Committing**
-4. **Pushing Changes to GitHub**
-5. **Branching**
-6. **Pull Requests**
+Once the files have loaded, run our solution by opening the ‘GrossIteration.xaml’ file and then clicking Run/Run File/Debug. It will take some time to run entirely but once it has finished, open up ‘Movie_Data.xlsx’ where you will find the title, url, rank, director, studio and producer information for each movie in the sheet ‘MovieInfo’ and the name and highest grossing movie (and the corresponding gross amount) for each director in ’Directors’. 
 
-## 1. Installing Git
-Install Git on your computer by following the instructions for your operating system at:
-https://git-scm.com/downloads
+It is important not to have ‘Movie_Data.xlsx’ open while the solution is running.
 
-## 2. Cloning a Repository
-To work on a project locally, you need to clone a repository to your computer.
-Use the following command in your terminal:
-```git clone <https://github.com/psri981/Group8-300-762>```
-
-## 3. Making Changes and Committing
-(All git commands are done through the terminal)
-1. **Edit the files in your local repository.**
-2. **Use the following command to stage your changes for commit:**
-```git add .```
-3. **Commit your changes with a descriptive message, please:**
-```git commit -m "Your message here"```
-
-## 4. Pushing Changes to GitHub
-To send your local commits to your GitHub repository:
-```git push origin main```
-Replace 'main' with the branch name you want to push.
-
-## 5. Branching
-Branches allow you to work on different features or bug fixes without affecting the main project.
-Create a new branch with:
-```git checkout -b new-branch-name```
-Switch between branches with:
-```git checkout branch-name```
-
-## 6. Pull-Requests
-Pull requests (PRs) are used to propose and discuss changes to a repository.
-To create a PR:
-1. **Go to the repository on GitHub.**
-2. **Click the 'Pull requests' tab.**
-3. **Click 'New pull request.'**
-4. **Follow the prompts to compare and create the PR.**
-
-
-
+Our project repo and commit history is available here:
+https://github.com/psri981/Group8-300-762.git 
