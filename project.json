@@ -46,6 +46,11 @@
         "editingStatus": "Publishable",
         "testCaseId": "0af91793-2602-41f6-bd25-2c27d26634ef",
         "fileName": "TestCases\\TestOpenPreviousMonthMojo.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bba08098-0606-4b22-9a45-e0c11f422acc",
+        "fileName": "TestCases\\TestMovieGrossScraping.xaml"
       }
     ],
     "modernBehavior": false
