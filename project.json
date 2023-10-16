@@ -1,9 +1,9 @@
-{
+﻿{
   "name": "Movie Search Data Scrape Group 8",
   "description": "Automates collection of movie data - crew and grosses. Also automated collection of director data - highest grossing movie",
-  "main": "testLogMsgs.xaml",
+  "main": "GrossIteration.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.Mail.Activities": "[1.12.3]",
     "UiPath.System.Activities": "[21.10.5]",
     "UiPath.Testing.Activities": "[23.10.0]",
@@ -43,9 +43,24 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "a0220b00-68bf-423e-984b-f0a6577456ee",
-        "fileName": "TestCase.xaml"
+        "editingStatus": "Publishable",
+        "testCaseId": "b6044041-6897-4330-a331-5851fa0e57ed",
+        "fileName": "TestCases\\TestMovieGrossScrapingMultipleFilms.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "50b00ae6-9e7c-4b1f-8bfc-4891bf203417",
+        "fileName": "TestCases\\TestMovieGrossScrapingNoFilms.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9e484b14-74df-4106-8907-5e3922700135",
+        "fileName": "TestCases\\TestMovieGrossScrapingSingleFilm.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "14998929-2bb7-4649-9f3f-34fcdfc125dc",
+        "fileName": "TestCases\\TestOpenPreviousMonthMojo.xaml"
       }
     ],
     "modernBehavior": false
@@ -53,8 +68,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "testLogMsgs.xaml",
-      "uniqueId": "ea4a1d0b-56b1-4934-93a7-5ed4c2dbf1df",
+      "filePath": "GrossIteration.xaml",
+      "uniqueId": "f8ec923b-0b26-4248-8ef9-01c8b493d3b4",
       "input": [],
       "output": []
     }
