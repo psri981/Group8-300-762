@@ -9,7 +9,7 @@
     <x:Property Name="directorURL" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="dt_logs" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>945.6,7058.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>945.6,6258.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -85,16 +85,15 @@
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This section cycles through all the movie titles put in the data table and gathers crew information on them to put in the excel spreadsheet" DataTable="[ExtractDataTable]" DisplayName="Get and Add Crew Info" sap:VirtualizedContainerService.HintSize="956,6993.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This section cycles through all the movie titles put in the data table and gathers crew information on them to put in the excel spreadsheet" DataTable="[ExtractDataTable]" DisplayName="Get and Add Crew Info" sap:VirtualizedContainerService.HintSize="956,6193.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
     <ui:ForEachRow.Body>
       <ActivityAction x:TypeArguments="sd:DataRow">
         <ActivityAction.Argument>
           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
         </ActivityAction.Argument>
-        <Sequence DisplayName="For each movie title from spreadsheet do..." sap:VirtualizedContainerService.HintSize="922.4,6841.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence DisplayName="For each movie title from spreadsheet do..." sap:VirtualizedContainerService.HintSize="922.4,6041.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -410,7 +409,7 @@
                                 <InArgument x:TypeArguments="x:String">No directors found</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Sequence DisplayName="Log Process GetAndAddCrew" sap:VirtualizedContainerService.HintSize="475.2,790.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <Sequence DisplayName="Log Process GetAndAddCrew" sap:VirtualizedContainerService.HintSize="475.2,758.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -714,13 +713,13 @@
               </ActivityAction>
             </ui:OpenBrowser.Body>
           </ui:OpenBrowser>
-          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Format and Add movie crew info into Movie_Data spreadsheet" sap:VirtualizedContainerService.HintSize="880.8,1696.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
+          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Format and Add movie crew info into Movie_Data spreadsheet" sap:VirtualizedContainerService.HintSize="880.8,1695.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="Movie_Data.xlsx">
             <ui:ExcelApplicationScope.Body>
               <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                 </ActivityAction.Argument>
-                <Sequence sap2010:Annotation.AnnotationText="This section processes and adds all the movie crew info collected in the previous section. Processing the data is important as the data scraping doesn't always provide easily readable/usable data" DisplayName="Processing and adding of info" sap:VirtualizedContainerService.HintSize="836,1587.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence sap2010:Annotation.AnnotationText="This section processes and adds all the movie crew info collected in the previous section. Processing the data is important as the data scraping doesn't always provide easily readable/usable data" DisplayName="Processing and adding of info" sap:VirtualizedContainerService.HintSize="836,1585.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -780,7 +779,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <ui:Comment sap:VirtualizedContainerService.HintSize="794.4,115.2" sap2010:WorkflowViewState.IdRef="Comment_3" Text="// Producers were scrapped in one big section and had a lot of random spaces and new lines, so these are removed before they get added into the spreadsheet" />
+                  <ui:Comment sap:VirtualizedContainerService.HintSize="794.4,113.6" sap2010:WorkflowViewState.IdRef="Comment_3" Text="// Producers were scrapped in one big section and had a lot of random spaces and new lines, so these are removed before they get added into the spreadsheet" />
                   <Assign DisplayName="Remove new/return lines from producers" sap:VirtualizedContainerService.HintSize="794.4,60" sap2010:WorkflowViewState.IdRef="Assign_14">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[Movie_Producers]</OutArgument>
@@ -802,50 +801,6 @@
               </ActivityAction>
             </ui:ExcelApplicationScope.Body>
           </ui:ExcelApplicationScope>
-          <Sequence DisplayName="Log Adding Film Data" sap:VirtualizedContainerService.HintSize="880.8,758.4" sap2010:WorkflowViewState.IdRef="Sequence_38">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Now.ToString(&quot;yyyy-MM-dd HH:mm:ss&quot;), &quot;Adding Film Data To Spread Sheet Process Complete&quot;, &quot;Info&quot;}]" DataTable="[dt_logs]" DisplayName="Configure Log Message" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_5">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:AddDataRow>
-            <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This activity writes the custom log messages to excel" DisplayName="Write Log Msg to Excel" sap:VirtualizedContainerService.HintSize="433.6,437.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_7" InstanceCachePeriod="3000" WorkbookPath="LogMessages.xlsx">
-              <ui:ExcelApplicationScope.Body>
-                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,296.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="sd1:Color" Name="colour" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelWriteRange AddHeaders="False" DataTable="[dt_logs]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_5" SheetName="LogMessages" StartingCell="A2" />
-                    <ui:Comment sap:VirtualizedContainerService.HintSize="333.6,76" sap2010:WorkflowViewState.IdRef="Comment_10" Text="//This Activity appends the current log message to the next available cell" />
-                  </Sequence>
-                </ActivityAction>
-              </ui:ExcelApplicationScope.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:ExcelApplicationScope>
-          </Sequence>
         </Sequence>
       </ActivityAction>
     </ui:ForEachRow.Body>

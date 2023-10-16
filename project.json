@@ -1,7 +1,7 @@
 {
   "name": "Movie Search Data Scrape Group 8",
   "description": "Automates collection of movie data - crew and grosses. Also automated collection of director data - highest grossing movie",
-  "main": "GrossIteration.xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.Mail.Activities": "[1.12.3]",
@@ -73,8 +73,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "GrossIteration.xaml",
-      "uniqueId": "f8ec923b-0b26-4248-8ef9-01c8b493d3b4",
+      "filePath": "Main.xaml",
+      "uniqueId": "eadeaa9c-3990-403e-af5c-dfe1476a96f8",
       "input": [],
       "output": []
     }
