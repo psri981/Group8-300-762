@@ -964,7 +964,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">300,1346.4 300,1385.6</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <TryCatch DisplayName="Try Catch Data Scrape Movie Names" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                  <TryCatch DisplayName="Try Catch Data Scrape Movie Names" sap:VirtualizedContainerService.HintSize="553.6,1700" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -996,7 +996,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="extract movie titles, rank and url" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Film Title' attr='text' name2='Film URL' attr2='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Film Rank' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="1" SimulateClick="True">
+                                  <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="extract movie titles, rank and url" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Film Title' attr='text' name2='Film URL' attr2='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Film Rank' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="100" SimulateClick="True">
                                     <ui:ExtractData.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="804fb79a-68bc-4fd0-b4b3-213881f8dce5" InformativeScreenshot="fb9bfc26fe6ebf0b5a0e2400a50469ae" Selector="&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
                                         <ui:Target.TimeoutMS>
@@ -1070,7 +1070,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ui:SelectorNotFoundException" Name="exception" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Log Error" sap:VirtualizedContainerService.HintSize="475.2,739.2" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                          <Sequence DisplayName="Log Error" sap:VirtualizedContainerService.HintSize="475.2,758.4" sap2010:WorkflowViewState.IdRef="Sequence_66">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1250,10 +1250,10 @@
                               </Sequence>
                             </TryCatch.Try>
                             <TryCatch.Catches>
-                              <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="481.6,828.8" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                              <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_7">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -1261,7 +1261,7 @@
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ui:SelectorNotFoundException" Name="exception" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Log Error" sap:VirtualizedContainerService.HintSize="475.2,758.4" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                                  <Sequence DisplayName="Log Error" sap:VirtualizedContainerService.HintSize="475.2,668" sap2010:WorkflowViewState.IdRef="Sequence_73">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
