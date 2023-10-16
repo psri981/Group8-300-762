@@ -61,6 +61,11 @@
         "editingStatus": "Publishable",
         "testCaseId": "14998929-2bb7-4649-9f3f-34fcdfc125dc",
         "fileName": "TestCases\\TestOpenPreviousMonthMojo.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "da2006d3-bdac-420e-856c-a4e6325b5b0f",
+        "fileName": "TestCases\\TestGetAndAddCrewInfo.xaml"
       }
     ],
     "modernBehavior": false
