@@ -3,7 +3,7 @@
   "description": "Automates collection of movie data - crew and grosses. Also automated collection of director data - highest grossing movie",
   "main": "GrossIteration.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.Mail.Activities": "[1.12.3]",
     "UiPath.System.Activities": "[21.10.5]",
     "UiPath.Testing.Activities": "[23.10.0]",
@@ -22,6 +22,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -29,7 +30,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
